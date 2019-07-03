@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    druid:
+      username: root
+      password: 123456
+      url: jdbc:mysql://192.168.0.109/sell?characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 5
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /sell
+wechat:
+  mpAppId: wxee938e9307b5bcbb
+  mpAppSecret: ea1dc49f0e58af0a6dcae6177df9dbe1
+  openAppId:
+  openAppSecret:
+  mchId:
+  mchKey:
+  keyPath: classpath:h5.p12
+  notifyUrl: http://mypack.natapp1.cc/sell/pay/notify
